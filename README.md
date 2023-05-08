@@ -179,7 +179,16 @@ int main(int argc, char **argv)
 }
 ~~~
 ## Output:
-![exp1](https://user-images.githubusercontent.com/94827772/236801806-1891ec73-731a-4db7-ab38-097831037b48.png)
-
+~~~
+root@SAV-MLSystem:/home/student/CodeSamples/chapter02# nvcc sumArraysOnGPU-timer.cu 
+root@SAV-MLSystem:/home/student/CodeSamples/chapter02# ./a.out
+./a.out Starting...
+Using Device 0: NVIDIA GeForce GT 710
+Vector size 16777216
+initialData Time elapsed 0.414120 sec
+sumArraysOnHost Time elapsed 0.034306 sec
+sumArraysOnGPU <<<  16401, 1023  >>>  Time elapsed 0.020723 sec
+Arrays match.
+~~~
 ## Result:
 Therefore we are successful in executing cuda program to Host-based array summation vs GPU-based vector summation and Explore the differences.
