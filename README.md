@@ -182,3 +182,4 @@ int main(int argc, char **argv)
 ![exp1](https://user-images.githubusercontent.com/94827772/236801806-1891ec73-731a-4db7-ab38-097831037b48.png)
 
 ## Result:
+Therefore we are successful in executing cuda program to Host-based array summation vs GPU-based vector summation and Explore the differences.
